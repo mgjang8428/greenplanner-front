@@ -1,5 +1,8 @@
 import type { StorybookConfig } from '@storybook/react-vite';
 
+import tsconfigPath from 'vite-tsconfig-paths';
+import { mergeConfig } from 'vite';
+
 const config: StorybookConfig = {
   "stories": [
     "../src/**/*.mdx",
@@ -14,6 +17,13 @@ const config: StorybookConfig = {
   "framework": {
     "name": "@storybook/react-vite",
     "options": {}
-  }
+  },
+
+  // tsconfig.app.json 에서 절대 경로 가져오기
+  viteFinal: async (config) => {
+    return mergeConfig(config, {
+      plugins: [tsconfigPath()],
+    })
+  },
 };
 export default config;

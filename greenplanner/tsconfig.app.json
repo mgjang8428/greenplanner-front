@@ -26,10 +26,11 @@
     /* apsolute paths */
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"],
-      "@app/*": ["./src/app/*"],
-      "@assets/*": ["./src/assets/*"],
-      "@components/*": ["./src/components/*"],
+      "@/*": ["*"],
+      "@src/*": ["src/*"],
+      "@app/*": ["src/app/*"],
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
     }
   },
   "include": ["src"]

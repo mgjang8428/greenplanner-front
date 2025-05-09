@@ -1,7 +1,11 @@
+import { useTranslation } from 'react-i18next';
+
 export default function App() {
+	const { t } = useTranslation();
+
 	return (
 		<div>
-			<div>greenplanner test</div>
+			<div>{t(`test`)}</div>
 			<div>hihi</div>
 		</div>
 	);

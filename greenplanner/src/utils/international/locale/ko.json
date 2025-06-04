@@ -1,6 +1,27 @@
 {
-    "test": "테스트",
-    "notfound-page": {
-        "text": "404 페이지를 찾을 수 없습니다."
-    }
+	"layout": {
+		"top": {
+			"signIn": "로그인",
+			"signUp": "회원가입"
+		},
+		"settingModal": {
+			"title": "설정",
+			"lang": {
+				"title": "언어 설정",
+				"button": {
+					"undefined": "언어 감지",
+					"ko": "한국어",
+					"en": "English"
+				}
+			},
+			"theme": {
+				"title": "테마 설정",
+				"button": {
+					"auto": "자동",
+					"light": "라이트",
+					"dark": "다크"
+				}
+			}
+		}
+	}
 }
